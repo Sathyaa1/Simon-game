@@ -1,0 +1,115 @@
+body {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  color: 	#800080;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.title{
+position: absolute;
+padding-top: 130px;
+right:  2%;
+margin: 25px;
+display: inline-block;
+height: 300px;
+width: 40%;
+text-align: right;
+}
+
+.title-h2{
+  font-size: 4rem;
+  font-family: 'Passions Conflict', cursive;
+  color: #FF4500;
+  animation: mymove 3s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes mymove {
+ 0%   { left: 0px; top: 0px;}
+ 50%  { left: 100px; top: 0px;}
+ 100% { left: 0px; top: 0px;}
+}
+
+.img{
+  height: 200px;
+  position: absolute;
+  right: 30%;
+  padding-bottom: 3%;
+  border-radius: 20%;
+  animation:  5s infinite;
+}
+
+@keyframes fadeimage {
+  0%{
+    opacity: 0.1;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0.1;
+  }
+}
+
+.overlay {
+  position: absolute;
+  margin-top: 88px;
+  width: 70%;
+  transition: .5s ease;
+  opacity:0;
+  color: #FAF4FF;
+  font-size: 12px;
+  padding-left: 215px;
+  text-align: center;
+}
+
+.title:hover .overlay  {
+  opacity: 1;
+}
